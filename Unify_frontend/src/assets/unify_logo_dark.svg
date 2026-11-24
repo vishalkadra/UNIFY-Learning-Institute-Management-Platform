@@ -1,0 +1,69 @@
+<svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111726"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fa9f5"/>
+      <stop offset="100%" stop-color="#6b5cff"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#ff5a1f"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d7dbe6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="900" height="380" fill="url(#bgGrad)"/>
+
+  <!-- Mark: abstract connected-nodes globe (modern, minimal) -->
+  <g transform="translate(160,150)">
+    <circle r="92" fill="none" stroke="url(#ringGrad)" stroke-width="3" opacity="0.55"/>
+    <circle r="92" fill="none" stroke="#1c2436" stroke-width="1"/>
+
+    <!-- latitude/meridian lines for a subtle globe feel -->
+    <ellipse rx="92" ry="34" fill="none" stroke="url(#ringGrad)" stroke-width="1.4" opacity="0.5"/>
+    <ellipse rx="34" ry="92" fill="none" stroke="url(#ringGrad)" stroke-width="1.4" opacity="0.5"/>
+
+    <!-- connection nodes forming a network / unity motif -->
+    <circle cx="0" cy="-92" r="6" fill="url(#accentGrad)"/>
+    <circle cx="80" cy="-46" r="5" fill="#6b5cff"/>
+    <circle cx="80" cy="46" r="5" fill="#3fa9f5"/>
+    <circle cx="0" cy="92" r="6" fill="url(#accentGrad)"/>
+    <circle cx="-80" cy="46" r="5" fill="#3fa9f5"/>
+    <circle cx="-80" cy="-46" r="5" fill="#6b5cff"/>
+    <circle cx="0" cy="0" r="9" fill="url(#accentGrad)"/>
+
+    <line x1="0" y1="0" x2="0" y2="-92" stroke="#4a5570" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="80" y2="-46" stroke="#4a5570" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="80" y2="46" stroke="#4a5570" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="0" y2="92" stroke="#4a5570" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="-80" y2="46" stroke="#4a5570" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="-80" y2="-46" stroke="#4a5570" stroke-width="1.2"/>
+  </g>
+
+  <!-- Wordmark: Unify -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="300" y="185" font-size="112" fill="url(#textGrad)" letter-spacing="-1">Un</text>
+    <text x="445" y="185" font-size="112" fill="url(#accentGrad)">i</text>
+    <text x="478" y="185" font-size="112" fill="url(#textGrad)" letter-spacing="-1">fy</text>
+  </g>
+
+  <!-- Divider -->
+  <rect x="302" y="205" width="330" height="2" fill="#2a3248"/>
+
+  <!-- Subtitle: by Universal Informatics -->
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="600">
+    <text x="302" y="248" font-size="30" fill="#aab2c5" letter-spacing="2">BY UNIVERSAL INFORMATICS</text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="302" y="288" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="20" fill="#6f7891" letter-spacing="1.5">
+    CONNECTED · SIMPLIFIED · CERTIFIED
+  </text>
+</svg>
